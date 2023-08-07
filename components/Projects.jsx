@@ -4,6 +4,7 @@ import React from 'react';
 import campGroundsImg from "../public/assets/projects/campGrounds.png"
 import connectImg from "../public/assets/projects/connect.png"
 import scImg from "../public/assets/projects/sportsCorner.png"
+import vidFestImg from "../public/assets/projects/vidFestSs.png"
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -16,23 +17,29 @@ const Projects = () => {
         <h2 className='py-4'>What I&apos;ve Built</h2>
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectItem
+            title='Vid Fest'
+            backgroundImg={vidFestImg}
+            projectUrl='/vidFest'
+            tech='MERN stack'
+          />
+          <ProjectItem
             title='campGrounds'
             backgroundImg={campGroundsImg}
             projectUrl='/campgrounds'
-            tech='Express.js'
+            tech='Express.js HTML CSS Mapbox'
           />
           <ProjectItem
             title='Connect'
             backgroundImg={connectImg}
             projectUrl='/connect'
-            tech='React JS'
+            tech='React.JS Sanity.io'
 
           />
           <ProjectItem
             title='Sports Corner'
             backgroundImg={scImg}
             projectUrl='/sc'
-            tech='PHP'
+            tech='PHP HTML CSS'
 
           />
         </div>

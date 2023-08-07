@@ -13,13 +13,11 @@ const About = () => {
           </p>
           <h2 className='py-4'>Who I Am</h2>
           <p className='py-2 text-gray-600'>
-            I am a pre final year Computer Science and Engineering B.E. student of Jadavpur University, Kolkata, India. I have started studying in Jadavpur University in
-            2020 and my expected graduation year is 2024. Alongside the course curriculum, I have dabbled in machine learning, python development, web development, etc.
-            But the area I am most experienced in is Web Development.
+            Hello, I am a final year Computer Science and Engineering B.E. student of Jadavpur University, Kolkata, India.
           </p>
           <p className='py-2 text-gray-600'>
             I started web developement in late 2021 participating in multiple hackathons. My primary expertise is in MERN stack and Next.js and Javascript in general.
-            Besides knowledge in Web Development, I have fundamental Computer Science knowledge along with problem solving skills.
+            Besides knowledge in Web Development, I have excellent fundamental Computer Science knowledge along with problem solving skills.
           </p>
           <Link href='/#projects'>
             <p className='py-2 text-gray-600 underline cursor-pointer'>
