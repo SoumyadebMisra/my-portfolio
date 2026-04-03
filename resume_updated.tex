@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Soumyadeb Misra} \\ \vspace{1pt}
+    Kolkata, West Bengal \\ \vspace{1pt}
+    \small \href{tel:+917430875344}{ \raisebox{-0.1\height}\faPhone\ \underline{+91-7430875344} ~}
+    \href{mailto:misrasoumya0802@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{misrasoumya0802@gmail.com}} ~
+    \href{https://www.linkedin.com/in/soumyadeb-misra-79734b21a/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{LinkedIn}} ~
+    \href{https://github.com/SoumyadebMisra}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}} ~
+    \href{https://soumyadeb-misra.vercel.app/}{\raisebox{-0.2\height}\faLink\ \underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Gupshup}{July 2024 -- Present}
+      {\textbf{Software Development Engineer I}}{Bengaluru, India}
+      \resumeItemListStart
+
+        \resumeItem{\normalsize{\textbf{High-Scale API Optimization:} Re-engineered bulk number allocation REST APIs by optimizing SQL query execution plans and streamlining code logic to minimize database round-trips per iteration; \textbf{reduced API latency by 30\%} and implemented a robust, multi-tier error handling framework to ensure transactional integrity and system resilience.}}
+
+        \resumeItem{\normalsize{\textbf{Platform Reliability \& Automation:} Architected a Python-based intelligent recovery system for voice platform infrastructure (FreeSWITCH); integrated automated health checks, SIP originate validation, and real-time Slack alerting, ensuring \textbf{99.9\% service uptime} and eliminating manual intervention for memory leaks.}}
+
+        \resumeItem{\normalsize{\textbf{Voice AI Orchestration (POC):} Developed an end-to-end Voice AI SDK, benchmarking audio chunking strategies to achieve \textbf{$<$800ms end-to-end latency}; integrated LLM-based TTS/STT pipelines via WebSockets and ElevenLabs APIs for seamless, real-time human-like interactions.}}
+
+        \resumeItem{\normalsize{\textbf{Backend Architecture:} Engineered IVR listing services with API-key authentication; implemented comprehensive \textbf{database-level audit logging} across user management modules and resolved business-critical timezone synchronization bugs in scheduling engines.}}
+
+        \resumeItem{\normalsize{\textbf{SDLC \& Leadership:} Contributed to system design discussions, performed rigorous code reviews, and mentored junior engineers on \textbf{Clean Code} principles and scalable RESTful architecture.}}
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jadavpur University}{Sept 2020 -- June 2024}
+      {B.E. -- \textbf{Computer Science \& Engineering} (SGPA: 8.81)}{Kolkata, India}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Relevant Coursework: Data Structures \& Algorithms, DBMS, Operating Systems, OOP, Computer Networks}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+       \resumeProjectHeading
+          {\href{https://vid-fest.vercel.app/}{\textbf{\large{\underline{Vid Fest}}} {\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{MongoDB $\cdot$ Express.js $\cdot$ React.js $\cdot$ Node.js $\cdot$ JWT Auth}}}{June 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Full-stack \textbf{MERN} video sharing platform with \textbf{JWT authentication}, video upload/streaming, comments, and real-time audience interaction; RESTful backend with MongoDB persistence.}}
+            \resumeItem{\textcolor{accent}{\href{https://github.com/stream2026/Vid-Fest-Backend}{\underline{\normalsize{Backend}}}}} ~
+            \resumeItem{\textcolor{accent}{\href{https://github.com/stream2026/Vid-Fest_Frontend}{\underline{\normalsize{Frontend}}}}}
+          \resumeItemListEnd
+
+       \resumeProjectHeading
+          {\href{https://campgrounds-eaz4.onrender.com/}{\textbf{\large{\underline{campGrounds}}} {\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Express.js $\cdot$ MongoDB $\cdot$ Passport.js $\cdot$ Cloudinary}}}{2022}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Full-stack campground listing platform built on Node.js using Express. Features include Passport.js authentication, interactive Mapbox maps, and Cloudinary for robust image storage.}}
+            \resumeItem{\textcolor{accent}{\href{https://github.com/SoumyadebMisra/campGrounds}{\underline{\normalsize{Code}}}}}
+          \resumeItemListEnd
+
+       \resumeProjectHeading
+          {\href{https://connectsm.netlify.app/}{\textbf{\large{\underline{Connect}}} {\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{React.js $\cdot$ Tailwind CSS $\cdot$ Sanity.io $\cdot$ Google Auth}}}{2022}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Social image-sharing networking site enabled with robust Google OAuth authentication. Features categorized real-time feeds powered by a Sanity.io headless CMS backend.}}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{Python, JavaScript (ES6+, Node.js), C++, Java, SQL}} \\
+     \textbf{\normalsize{Frameworks:}}{ \normalsize{Django, Django REST Framework, Express.js, React.js, Next.js}} \\
+     \textbf{\normalsize{Voice AI \& LLM:}}{ \normalsize{Cartesia, Deepgram, ElevenLabs, OpenAI/Anthropic SDKs, Voice AI Orchestration}} \\
+     \textbf{\normalsize{AWS:}}{ \normalsize{EC2, S3, SQS, SNS, Lambda, RDS, Aurora, CloudWatch}} \\
+     \textbf{\normalsize{Databases:}}{ \normalsize{PostgreSQL, MySQL, MongoDB, Redis, Valkey}} \\
+     \textbf{\normalsize{Tools \& Servers:}}{ \normalsize{Nginx, FreeSWITCH, uWSGI, Uvicorn, PM2, Git, GitHub, Postman, Linux/Bash}} \\
+     \textbf{\normalsize{Concepts:}}{ \normalsize{REST APIs, Event-Driven Architecture, Pub/Sub, Caching, CI/CD, Microservices}} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+%-----------ACHIEVEMENTS---------------
+\section{ACHIEVEMENTS}
+\resumeItemListStart
+    \resumeItem{\normalsize{Google Kickstart Round G \textbf{2022} $|$ Rank - \textbf{2025} \href{https://drive.google.com/file/d/1XiAeBao1RJKzIclkJ124O35rVYAEprz1/view?usp=sharing}{\raisebox{-0.1\height}\faExternalLink}}}
+    \resumeItem{\normalsize{Google Kickstart Round E \textbf{2022} $|$ Rank - \textbf{3246} \href{https://drive.google.com/file/d/1XiAeBao1RJKzIclkJ124O35rVYAEprz1/view?usp=sharing}{\raisebox{-0.1\height}\faExternalLink}}}
+    \resumeItem{\normalsize{JEE Advanced All-India Rank -- \textbf{5789} $|$ WBJEE All-India Rank -- \textbf{173}}}
+    \resumeItem{\normalsize{Finalist in \textbf{Productathon 2022} \href{https://drive.google.com/file/d/1jZIwkHOhi3yYrjM9RRhXphR2mm_T7PkC/view?usp=sharing}{\raisebox{-0.1\height}\faExternalLink}}}
+\resumeItemListEnd
+\vspace{-10pt}
+
+
+%-----------EXTRACURRICULAR---------------
+\section{EXTRACURRICULAR}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Head Boy in High School}{March 2018 -- April 2020}{}{}
+        \vspace{-15pt} 
+            \resumeItemListStart
+                \resumeItem{\normalsize{Led the student council; managed school-wide events, inter-house competitions, and administrative coordination.}}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
