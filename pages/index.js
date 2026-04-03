@@ -22,6 +22,7 @@ export default function Home() {
         <meta property='og:title' content='Soumyadeb Misra | Software Development Engineer' />
         <meta property='og:description' content='SDE I at Gupshup — building scalable backend systems and Voice AI solutions.' />
         <meta property='og:type' content='website' />
+        <link rel='canonical' href='https://soumyadeb-misra.vercel.app' />
         <link rel='icon' href='/fav.png' />
       </Head>
       <Main />

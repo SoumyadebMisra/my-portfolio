@@ -10,8 +10,8 @@ const property = () => {
   return (
     <div className='w-full'>
        <Head>
-        <title>Connect | My Projects</title>
-        <meta name="description" content="One of my projects - Connect" />
+        <title>Connect | Software Development Engineer | Soumyadeb Misra</title>
+        <meta name="description" content="Connect - A social networking application showcasing scalable architecture and real-time interaction. Part of Soumyadeb Misra's Software Engineering portfolio." />
         <link rel="icon" href="/fav.png" />
       </Head>
       <div className='w-screen h-[50vh] relative'>

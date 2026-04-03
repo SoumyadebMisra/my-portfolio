@@ -10,8 +10,8 @@ const crypto = () => {
   return (
     <div className='w-full'>
        <Head>
-        <title>Sports Corner | My Projects</title>
-        <meta name="description" content="One of my projects - Sports Corner" />
+        <title>Sports Corner | Software Development Engineer | Soumyadeb Misra</title>
+        <meta name="description" content="Sports Corner - A sports-focused web application demonstrating backend logic and frontend design. Part of Soumyadeb Misra's Software Engineering portfolio." />
         <link rel="icon" href="/fav.png" />
       </Head>
       <div className='w-screen h-[50vh] relative'>

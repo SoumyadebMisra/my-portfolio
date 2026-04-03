@@ -10,8 +10,8 @@ const netflix = () => {
   return (
     <div className='w-full'>
       <Head>
-        <title>campGrounds | My Projects</title>
-        <meta name="description" content="One of my projects - campGrounds" />
+        <title>campGrounds | Software Development Engineer | Soumyadeb Misra</title>
+        <meta name="description" content="campGrounds application for finding and rating campsites globally. Part of Soumyadeb Misra's Software Engineering portfolio." />
         <link rel="icon" href="/fav.png" />
       </Head>
       <div className='w-screen h-[50vh] relative'>
