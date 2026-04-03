@@ -13,6 +13,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Soumyadeb Misra | Software Development Engineer</title>
+        <meta name="google-site-verification" content="QVHGmtyp4DLqHqEIOsIKAylgktdmHIhXzEg-0dbtPaY" />
         <meta
           name='description'
           content='Soumyadeb Misra — SDE I at Gupshup. Building high-scale APIs, Voice AI pipelines, and reliable backend systems. Previously at Jadavpur University, CSE.'
